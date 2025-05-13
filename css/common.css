@@ -1,0 +1,66 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css");
+
+:root {
+  --font:  "Pretendard GOV Variable", "Pretendard GOV", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --gokWhite: #fff;
+  --gokGrey-deep: #222; /* 기본 텍스트 컬러*/
+  --gokGrey: #575757; /* 정부 색 */
+  --gokGrey-light1: #aaa; /* 그림자 색상 1, 중요도 낮음 표시 */
+  --gokGrey-light2: #e5e5e5; /* 그림자 색상 2 */
+  --gokBlue: #013663; /* 강조 색, 메인 색 / 정부 색 */
+  --gokBlue-lightHover: #4a73a9; /* 호버시 변경되는 색 등*/
+  --gokBlue-lightPoint: #aad4e9; /* 선 색상 등 */
+  --gokBlue-lightBG: #eef6fb; /*바닥, 호버시 배경 */
+  --gokBlue-lightBGOp: rgba(170, 212, 233, 0.2); /* 바닥, 호버시 배경 (투명도 적용 버전) */
+  --color-naverblog: #00C300;
+  --color-youtube: #CD201F;
+  --color-x: #000;
+  --color-instagram: linear-gradient(190deg, #9919ec, #fe0263, #fec900);
+  --card-shadow: 5px 5px 5px rgba(170, 170, 170, 0.25); /* 카드 공통 그림자 */
+  --card-shadow-deep: 5px 5px 5px rgba(87, 87, 87, 0.25); /* 카드 공통 그림자 (조금 더 짙음) */
+  --card-hover-shadow: 0 0 5px #4a73a9; /* 카드 공통 호버 그림자 */
+  --font-strong: 1.1rem;
+}
+
+/* 공통 영역 */
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  font-family: var(--font);
+  color: var(--gokGrey-deep);
+  font-size: 17px; font-weight: normal;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+body{
+  position: relative;
+}
+
+h1{
+  font-size: 2.3rem; font-weight: bold;
+}
+
+h2{
+  font-size: 1.8rem; font-weight: bold;
+}
+
+h3{
+  font-size: 1.4rem; font-weight: bold;
+}
+
+h4{
+  font-size: 1.1rem; font-weight: bold;
+}
+
+h5{
+  font-size: 1rem; font-weight: bold;
+}
+
+h6{
+  font-size: .8rem; font-weight: bold;
+}
+

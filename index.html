@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+  <title>국립국어원</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="images/icon.png">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+      <div class="nav_logo">
+        <a href="#">
+          <img src="images/main_logo.png" alt="logo">
+        </a>
+      </div>
+      <nav class="topNav">
+        <span>
+          <a href="#none"><i class="fa-solid fa-globe"></i></a>
+        </span>
+        <ul>
+          <li><a href="#" data-target="knowledge">지식</a></li>
+          <li><a href="#" data-target="improve">개선</a></li>
+          <li><a href="#" data-target="education">교육</a></li>
+          <li><a href="#" data-target="sign">수어/점자</a></li>
+          <li><a href="#" data-target="withus">참여</a></li>
+          <li><a href="#" data-target="notification">알림</a></li>
+          <li><a href="#" data-target="data">자료</a></li>
+          <li><a href="#" data-target="about">소개</a></li>
+        </ul>
+        <span class="accordion_toggle">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <span>
+          <a href="#"><i class="fa-solid fa-square"></i></a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 언어 변경 language -->
+  <div class="language" id="language">
+    <ul>
+      <li><a href="index_en.html">영어</a></li>
+      <li><a href="index_ja.html">일본어</a></li>
+    </ul>
+  </div>
+
+  <!-- 서브 내비게이션 subNav -->
+  <div class="subNav_wrap">
+    <div class="inner">
+      <!-- 지식 -->
+      <div class="subNav_content" id="knowledge">
+        <h2>지식</h2>
+        <ul>
+          <li>
+            <b><a href="#" class="moreNav"><i class="fa-solid fa-ellipsis"></i>사전</a></b>
+            <ul>
+              <li><a href="#">사전 소개</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>우리말샘</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>표준국어대사전</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어기초사전</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>근현대 국어사전</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>어문 규범 찾기</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>지역어 종합 정보</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- 개선 -->
+      <div class="subNav_content subNav_content_Word" id="improve">
+        <h2>개선</h2>
+        <ul>
+          <li>
+            <b><a href="/pages/wordImprove_Korean.html">
+              <img src="images/icon_word (0).png" alt="word-icon">
+              다듬은 말</a></b>
+          </li>
+          <li>
+            <b><a href="#">
+              <img src="images/icon_word (1).png" alt="word-icon">
+              공공언어 감수</a></b>
+          </li>
+          <li>
+            <b><a href="#">
+              <img src="images/icon_word (2).png" alt="word-icon">
+              공공언어 개선<br>국민 제보</a></b>
+          </li>
+          <li>
+            <b><a href="#">
+              <img src="images/icon_word (3).png" alt="word-icon">
+              공공용어 번역</a></b>
+          </li>
+          <li>
+            <b><a href="#">
+              <img src="images/icon_word (4).png" alt="word-icon">
+              표준 전문용어</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- 교육 -->
+      <div class="subNav_content" id="education">
+        <h2>교육</h2>
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>국어문화학교</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어교원 자격</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>알고 싶은 한글</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어교수학습샘터</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>우리말 꿈터</a></b>
+            <ul>
+              <li><a href="#">우리말 꿈터 소개</a></li>
+              <li><a href="#">프로그램 신청 안내</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> 온라인 전시관</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- 수어/점자 -->
+      <div class="subNav_content" id="sign">
+        <h2>지식</h2>
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>수어</a></b>
+            <ul>
+              <li><a href="#">수어 소개</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국수어누리사전</a></li>
+              <li><a href="#">한국수어사전</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국수어교원 자격</a></li>
+              <li><a href="#">공공수어 통역 영상</a></li>
+              <li><a href="#">새수어</a></li>
+              <li><a href="#">수어교육영상</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>점자</a></b>
+            <ul>
+              <li><a href="#">점자 소개</a></li>
+              <li><a href="#">점자 규정과 해설</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>점자 종합정보 누리집</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- 참여 -->
+      <div class="subNav_content" id="withus">
+        <h2>참여</h2>
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>온라인 가나다</a></b>
+            <ul>
+              <li><a href="#">온라인 가나다</a></li>
+              <li><a href="#">상담 사례 모음</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>국민신문고</a></b>
+            <ul>
+              <li><a href="#">국민신문고 민원 소리</a></li>
+              <li><a href="#">국민신문고 정책 참여</a></li>
+              <li><a href="#">청백리 지킴이방</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>부패 행위 신고 및 포상</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>110 화상 수어 담당</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- 알림 -->
+      <div class="subNav_content" id="notification">
+        <h2>알림</h2>
+        <ul>
+          <li>
+            <b><a href="#">공지 사항</a></b>
+          </li>
+          <li>
+            <b><a href="#">입찰 공고</a></b>
+          </li>
+          <li>
+            <b><a href="#">국어 관련 기사</a></b>
+          </li>
+          <li>
+            <b><a href="#">학회/행사/기타 안내</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>관련 법령</a></b>
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>국어기본법</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국수화언어법</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>점자법</a></li>
+              <li><a href="#">국립국어원 예규</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- 자료 -->
+      <div class="subNav_content" id="data">
+        <h2>자료</h2>
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>언어정보나눔터</a></b>
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>모두의 말뭉치</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>인공지능(AI) 말평</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>온용어</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어 학습자 말뭉치 나눔터 </a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>숫자로 살펴보는 우리말 </a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>국어전문도서관 </a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>연구 · 조사 자료</a></b>
+            <ul>
+              <li><a href="#">연구 보고서</a></li>
+              <li><a href="#">기타 자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>간행물 자료</a></b>
+            <ul>
+              <li><a href="#">새국어생활</a></li>
+              <li><a href="#">쉼표, 마침표.</a></li>
+              <li><a href="#">국어 연감</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>정보공개/공공데이터 개방</a></b>
+            <ul>
+              <li><a href="#">정보공개/공공데이터 개방 안내</a></li>
+              <li><a href="#">정보 목록</a></li>
+              <li><a href="#">정보공개 자료실</a></li>
+              <li><a href="#">사전 정보 공표</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>홍보 및 방송 자료</a></b>
+          </li>
+          <li>
+            <b><a href="#">세계 한국어 한마당/함께 읽다 </a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- 소개 -->
+      <div class="subNav_content" id="about">
+        <h2>소개</h2>
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>기관 소개</a></b>
+            <ul>
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">설립목적</a></li>
+              <li><a href="#">기관 상징 소개</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>발자취</a></b>
+            <ul>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">역대 원장</a></li>
+              <li><a href="#">국립국어연구원 10년사</a></li>
+              <li><a href="#">국립국어원 20년사</a></li>
+              <li><a href="#">국립국어원 30년사</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>조직 · 사업 소개</a></b>
+            <ul>
+              <li><a href="#">조직과 업무 소개</a></li>
+              <li><a href="#">사업 소개</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>시설 소개</a></b>
+            <ul>
+              <li><a href="#">시설 소개</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 반응형 내비게이션 accordionNav -->
+  <div class="accordionNav_wrap">
+    <!-- 지식 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>지식</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>사전</a></b>
+            <ul>
+              <li><a href="#">사전 소개</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>우리말샘</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>표준국어대사전</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어기초사전</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>근현대 국어사전</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>어문 규범 찾기</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>지역어 종합 정보</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 개선 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>개선</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="/pages/wordImprove_Korean.html">다듬은 말 </a></b>
+          </li>
+          <li>
+            <b><a href="#">공공언어 감수</a></b>
+          </li>
+          <li>
+            <b><a href="#">공공언어 개선 국민 제보</a></b>
+          </li>
+          <li>
+            <b><a href="#">공공용어 번역</a></b>
+          </li>
+          <li>
+            <b><a href="#">표준 전문용어</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 교육 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>교육</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>국어문화학교</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어교원 자격</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>알고 싶은 한글</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어교수학습샘터</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>우리말 꿈터</a></b>
+            <ul>
+              <li><a href="#">우리말 꿈터 소개</a></li>
+              <li><a href="#">프로그램 신청 안내</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> 온라인 전시관</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 수어/점자 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>수어/점자</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>수어</a></b>
+            <ul>
+              <li><a href="#">수어 소개</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국수어누리사전</a></li>
+              <li><a href="#">한국수어사전</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국수어교원 자격</a></li>
+              <li><a href="#">공공수어 통역 영상</a></li>
+              <li><a href="#">새수어</a></li>
+              <li><a href="#">수어교육영상</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>점자</a></b>
+            <ul>
+              <li><a href="#">점자 소개</a></li>
+              <li><a href="#">점자 규정과 해설</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>점자 종합정보 누리집</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 참여 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>참여</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>온라인 가나다</a></b>
+            <ul>
+              <li><a href="#">온라인 가나다</a></li>
+              <li><a href="#">상담 사례 모음</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>국민신문고</a></b>
+            <ul>
+              <li><a href="#">국민신문고 민원 소리</a></li>
+              <li><a href="#">국민신문고 정책 참여</a></li>
+              <li><a href="#">청백리 지킴이방</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>부패 행위 신고 및 포상</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>110 화상 수어 담당</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 알림 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>알림</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">공지 사항</a></b>
+          </li>
+          <li>
+            <b><a href="#">입찰 공고</a></b>
+          </li>
+          <li>
+            <b><a href="#">보도 자료</a></b>
+          </li>
+          <li>
+            <b><a href="#">국어 관련 기사</a></b>
+          </li>
+          <li>
+            <b><a href="#">학회/행사/기타 안내</a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>관련 법령</a></b>
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>국어기본법</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국수화언어법</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>점자법</a></li>
+              <li><a href="#">국립국어원 예규</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 자료 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>자료</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>언어정보나눔터</a></b>
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>모두의 말뭉치</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>인공지능(AI) 말평</a></li>
+              <li><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>온용어</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>한국어 학습자 말뭉치 나눔터 </a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>숫자로 살펴보는 우리말 </a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>국어전문도서관 </a></b>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>연구 · 조사 자료</a></b>
+            <ul>
+              <li><a href="#">연구 보고서</a></li>
+              <li><a href="#">기타 자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>간행물 자료</a></b>
+            <ul>
+              <li><a href="#">새국어생활</a></li>
+              <li><a href="#">쉼표, 마침표.</a></li>
+              <li><a href="#">국어 연감</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>정보공개/공공데이터 개방</a></b>
+            <ul>
+              <li><a href="#">정보공개/공공데이터 개방 안내</a></li>
+              <li><a href="#">정보 목록</a></li>
+              <li><a href="#">정보공개 자료실</a></li>
+              <li><a href="#">사전 정보 공표</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>홍보 및 방송 자료</a></b>
+          </li>
+          <li>
+            <b><a href="#">세계 한국어 한마당/함께 읽다</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 소개 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>소개</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>기관 소개</a></b>
+            <ul>
+              <li><a href="#">인사말</a></li>
+              <li><a href="#">설립목적</a></li>
+              <li><a href="#">기관 상징 소개</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>발자취</a></b>
+            <ul>
+              <li><a href="#">연혁</a></li>
+              <li><a href="#">역대 원장</a></li>
+              <li><a href="#">국립국어연구원 10년사</a></li>
+              <li><a href="#">국립국어원 20년사</a></li>
+              <li><a href="#">국립국어원 30년사</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>조직 · 사업 소개</a></b>
+            <ul>
+              <li><a href="#">조직과 업무 소개</a></li>
+              <li><a href="#">사업 소개</a></li>
+            </ul>
+          </li>
+          <li>
+            <b><a href="#"><i class="fa-solid fa-ellipsis"></i>시설 소개</a></b>
+            <ul>
+              <li><a href="#">시설 소개</a></li>
+              <li><a href="#">오시는 길</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 빠른 이동 quick_menu -->
+  <div class="quick_menu">
+    <strong>빠른 이동</strong>
+    <ul>
+      <li><a href="#">
+        <img src="images/icon_ganadaOnline.png" alt="">
+        <span>온라인 가나다</span>
+      </a></li>
+      <li><a href="#">
+        <img src="images/icon_ganadaCall.png" alt="">
+        <span>가나다 전화</span>
+      </a></li>
+      <li><a href="#">
+        <img src="images/icon_ganadaTalk.png" alt="">
+        <span>우리말 365</span>
+      </a></li>
+      <li><a href="/pages/wordImprove_Korean.html">
+        <img src="images/icon_word (0).png" alt="">
+        <span>다듬은 말</span>
+      </a></li>
+      <li><a href="#">
+        <img src="images/icon_word (1).png" alt="">
+        <span>공공언어 감수</span>
+      </a></li>
+      <li><a href="#">
+        <img src="images/icon_word (2).png" alt="">
+        <span>공공언어 개선 국민제보</span>
+      </a></li>
+      <li><a href="#">
+        <img src="images/icon_word (3).png" alt="">
+        <span>공공용어 번역</span>
+      </a></li>
+      <li><a href="#">
+        <img src="images/icon_word (4).png" alt="">
+        <span>표준 전문용어</span>
+      </a></li>
+    </ul>
+  </div>
+  
+  <!-- 섹션 앵커 section_anchor -->
+  <div class="section_anchor">
+    <ul>
+      <li><a href="#section1">
+        <strong>ㄱ</strong>
+        <span>… 자주 가는 서비스</span>
+      </a></li>
+      <li><a href="#section2">
+        <strong>ㄴ</strong>
+        <span>… 함께하는 우리말 다듬기</span>
+      </a></li>
+      <li><a href="#section3">
+        <strong>ㄷ</strong>
+        <span>… 공공언어 개선 참여하기</span>
+      </a></li>
+      <li><a href="#section4">
+        <strong>ㄹ</strong>
+        <span>… 국립국어원 알리미</span>
+      </a></li>
+      <li><a href="#section5">
+        <strong>ㅁ</strong>
+        <span>… 국립국어원 누리 소통망 바로가기</span>
+      </a></li>
+      <li><a href="#section6">
+        <strong>ㅂ</strong>
+        <span>… 질문 있어요</span>
+      </a></li>
+    </ul>
+  </div>
+
+  <!-- 스크롤 알림 아이콘 scroll_icon -->
+  <a href="#none" class="scroll_icon">
+    <div class="scroll_box">
+      <span class="scroll_dot"></span>
+    </div>
+    <span>아래로!</span>
+  </a>
+
+  <!-- 메인비주얼 main_visual -->
+  <section class="main_visual">
+    <div class="main_bg">
+      <img src="images/main_visual (img).jpg" alt="main_visual">
+    </div>
+    <div class="main_box">
+      <div class="main_txt" data-aos="fade-up" data-aos-duration="1500">
+        <strong>우리말이 우리의 미래입니다</strong>
+      </div>
+      <div class="main_search" data-aos="fade-up" data-aos-duration="1500">
+        <label for="search_txt">
+          <input type="text" id="search_txt" placeholder="궁금하신 것을 검색하세요">
+        </label>
+        <button><i class="fa fa-search"></i>검색하기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 자주가는 서비스 service -->
+  <section class="service" id="section1">
+    <div class="inner">
+      <div class="section_titleBox">
+        <h2 class="section_title">자주 가는 서비스</h2>
+      </div>
+      <div class="swiper service_swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>표준우리말대사전</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>우리말샘</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>한국어기초사전</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>근현대국어사전</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (5).png" alt="service-icon">
+              <span>모두의 말뭉치</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (6).png" alt="service-icon">
+              <span>인공지능(AI) 말평</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (7).png" alt="service-icon">
+              <span>온용어</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (8).png" alt="service-icon">
+              <span>한국어 학습자<br>말뭉치 나눔터</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (9).png" alt="service-icon">
+              <span>지역어 종합 정보</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (10).png" alt="service-icon">
+              <span>숫자로 살펴보는<br>우리말</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (11).png" alt="service-icon">
+              <span>국어문화학교</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (12).png" alt="service-icon">
+              <span>한국어교수학습샘터</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (13).png" alt="service-icon">
+              <span>한국어 교원</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (14).png" alt="service-icon">
+              <span>국어전문도서관</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (15).png" alt="service-icon">
+              <span>한글 맞춤법</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (16).png" alt="service-icon">
+              <span>표준어 규정</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (17).png" alt="service-icon">
+              <span>외래어 표기법</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (17).png" alt="service-icon">
+              <span>국어의<br>로마자 표기법</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (19).png" alt="service-icon">
+              <span>용례 찾기</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (20).png" alt="service-icon">
+              <span>한국어수어누리사전</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (21).png" alt="service-icon">
+              <span>한국수어사전</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (22).png" alt="service-icon">
+              <span>점자 종합정보<br>누리집</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (13).png" alt="service-icon">
+              <span>한국수어교원</span>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 함께하는 우리말 다듬기 word_korean -->
+  <section class="word_korean" id="section2">
+    <div class="inner">
+      <div class="korean_box_left">
+        <div class="section_titleBox">
+          <h2 class="section_title">함께하는 우리말 다듬기</h2>
+        </div>
+        <div class="korean_info" data-aos="fade-up" data-aos-duration="1500">
+          <p>국립국어원과 <br>함께 다듬은 말<br>
+            <strong data-target="18207"></strong>개
+          </p>
+        </div>
+        <div class="page_more">
+          <a href="/pages/wordImprove_Korean.html">
+            <i class="fa-solid fa-plus"></i>
+          </a>
+        </div>
+      </div>
+      <div class="korean_box_right">
+        <ul>
+          <li>
+            <label>
+              <input role="switch" type="checkbox" id="word1">
+              <span id="wordKorean1">네거티브 리스트 Negative List</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input role="switch" type="checkbox" id="word2">
+              <span id="wordKorean2">듀프 Dupe</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input role="switch" type="checkbox" id="word3">
+              <span id="wordKorean3">비바리엄, 비바리움 Vivarium</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input role="switch" type="checkbox" id="word4">
+              <span id="wordKorean4">에이지 테크 Age Tech</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input role="switch" type="checkbox" id="word5">
+              <span id="wordKorean5">탬퍼링  Tampering</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 공공언어 개선 참여하기 word_improve -->
+  <section class="word_improve" id="section3">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">쉽고 바른 말로, 누구나 이해할 수 있는 우리말을 만들어요</p>
+        <h2 class="section_title">공공언어 개선 참여하기</h2>
+      </div>
+      <div class="improve_cards">
+        <ul>
+          <li data-aos="fade-down-right" data-aos-duration="1000">
+            <a href="#" class="card">
+              <div class="card_icon">
+                <img src="images/icon_word (1).png" alt="word-improve-icon">
+              </div>
+              <div class="card_text">
+                <span class="card_desc">대국민 공문서 문장 감수</span>
+                <strong class="card_name">공공언어 감수</strong>
+              </div>
+            </a>
+          </li>
+          <li data-aos="fade-down-left" data-aos-duration="1000">
+            <a href="#" class="card">
+              <div class="card_icon">
+                <img src="images/icon_word (2).png" alt="word-improve-icon">
+              </div>
+              <div class="card_text">
+                <span class="card_desc">생활 주변의<br>낯선 우리말 · 외국어 표현</span>
+                <strong class="card_name">공공언어 개선<br>국민 제보</strong>
+              </div>
+            </a>
+          </li>
+          <li data-aos="fade-up-right" data-aos-duration="1500">
+            <a href="#" class="card">
+              <div class="card_icon">
+                <img src="images/icon_word (3).png" alt="word-improve-icon">
+              </div>
+              <div class="card_text">
+                <span class="card_desc">한국어 · 한국 문화를<br>외국인에게 바르게 알리는</span>
+                <strong class="card_name">공공용어 번역</strong>
+              </div>
+            </a>
+          </li>
+          <li data-aos="fade-up-left" data-aos-duration="1500">
+            <a href="#" class="card">
+              <div class="card_icon">
+                <img src="images/icon_word (4).png" alt="word-improve-icon">
+              </div>
+              <div class="card_text">
+                <span class="card_desc">우리 생활에 밀접한<br>전문용어에 대한 표준</span>
+                <strong class="card_name">표준 전문용어</strong>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국립국어원 알리미 announce -->
+  <section class="announce" id="section4">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">국립국어원 소식을 한 눈에 모아보아요</p>
+        <h2 class="section_title">국립국어원 알리미</h2>
+      </div>
+      <div class="announceBox">
+        <!-- 탭 버튼 -->
+        <div class="announce_tabs">
+          <button class="tab_btn active">전체 보기</button>
+          <button class="tab_btn">공지 사항</button>
+          <button class="tab_btn">입찰 공고</button>
+          <button class="tab_btn">보도 자료</button>
+          <button class="tab_btn">학회/행사/기타</button>
+        </div>
+        <!-- 더보기 버튼 -->
+        <div class="page_more">
+          <a href="#">
+            <i class="fa-solid fa-plus"></i>
+          </a>
+        </div>
+        <!-- 전체 보기 -->
+        <div class="swiper announce_cards active">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 22.</span>
+                  <span class="card_type">공지사항</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[알림] 국립국어원 누리집 검색 기능 일시 중단 안내 (4. 29. 화)</strong>
+                  <p>누리집 관련 전산 작업으로 인하여, 국립국어원 대표 누리집의 검색 기능이 일시적으로 중단될 예정이오니 양해해 주시기 바랍니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 17.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[재공고] 2025년 중앙행정기관 등의 공공언어 진단 및 지침 정비</strong>
+                  <p>조달물자(용역) 구매입찰 재공고 (총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00792277-000 ㆍ공 고 명: 2025년 중앙행정기관 등의 공공언어 진단 및 지침 정비 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 17.</span>
+                  <span class="card_type">보도 자료</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">‘점사랑’으로 대용량 문서 점역도 빠르게</strong>
+                  <p>‘점사랑’으로 대용량 문서 점역도 빠르게 국립국어원, 대용량 문서 처리 성능이 향상된 ‘점사랑 6.0’ 공개국립국어원은 점자 문서 제작의 편의성을 높이기 위해 점역 소프트웨어 ‘점사랑 6.0’을 개발하여 오는 18일 공개한다. ‘점사랑 6.0’은 묵자* 문서를 점자로 변환하거나 점자 문서를 묵자로 변환하는 점역·역점역 프로그램으로, 파일 관리, 문서 편집, 파일 인쇄 등의 기능을 제공하여 사용자가 점자 문서를 편리하게 만들 수 있다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 16.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[재공고] 2025년 한국수어 교육과정 및 교재 개발</strong>
+                  <p>조달물자(용역) 구매입찰 재공고 (일반총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00791570-000 ㆍ공 고 명: 2025년 한국수어 교육과정 및 교재 개발 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 16.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[입찰] 2025년 국내 한국어교원 배움이음터 개최 운영</strong>
+                  <p>조달물자(용역) 구매입찰 공고 (제한총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00790655-000 ㆍ공 고 명: 2025년 국내 한국어교원 배움이음터 개최 운영 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 공지 사항 -->
+        <div class="swiper announce_cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 22.</span>
+                  <span class="card_type">공지사항</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[알림] 국립국어원 누리집 검색 기능 일시 중단 안내 (4. 29. 화)</strong>
+                  <p>누리집 관련 전산 작업으로 인하여, 국립국어원 대표 누리집의 검색 기능이 일시적으로 중단될 예정이오니 양해해 주시기 바랍니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 15.</span>
+                  <span class="card_type">공지사항</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[채용] 국립국어원 언어정보과 공무직 근로자(전산원) 채용 서류 전형 합격자 공고</strong>
+                  <p>국립국어원 언어정보과 공무직(전산원) 근로자 채용 시험 서류 전형 합격자를 다음과 같이 공고합니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 10.</span>
+                  <span class="card_type">공지사항</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[알림] 국립국어원 2025년 일상 대화 자료 수집 및 정제사업 관련 안내</strong>
+                  <p>국립국어원에서는 우리말 인공지능 기술 개발과 국어 연구 등에 활용하고자 대화 자료를 수집하여 가공하는 ‘2025년 일상 대화 자료 수집 및 정제’ 사업을 추진하고 있습니다. 우리말 인공지능 기술 발전 등에 기초가 되는 국가적 언어 자료의 수집과 구축 사업에 귀하의 소중한 대화 자료가 유용하게 활용될 수 있도록 많은 관심과 참여를 부탁드립니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 3.</span>
+                  <span class="card_type">공지사항</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[채용] 국립국어원 학예연구직 공무원 경력경쟁채용 공고</strong>
+                  <p>누리집 관련 전산 작업으로 인하여, 국립국어원 대표 누리집의 검색 기능이 일시적으로 중단될 예정이오니 양해해 주시기 바랍니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 2.</span>
+                  <span class="card_type">공지사항</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[채용] 국립국어원 언어정보과 공무직 근로자(전산원) 채용 공고</strong>
+                  <p>문화체육관광부 국립국어원(언어정보과)에서 공무직 근로자를 다음과 같이 공개 모집하오니, 많은 지원 바랍니다.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 입찰 공고 -->
+        <div class="swiper announce_cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 17.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[재공고] 2025년 중앙행정기관 등의 공공언어 진단 및 지침 정비</strong>
+                  <p>조달물자(용역) 구매입찰 재공고 (총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00792277-000 ㆍ공 고 명: 2025년 중앙행정기관 등의 공공언어 진단 및 지침 정비 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 16.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[재공고] 2025년 한국수어 교육과정 및 교재 개발</strong>
+                  <p>조달물자(용역) 구매입찰 재공고 (일반총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00791570-000 ㆍ공 고 명: 2025년 한국수어 교육과정 및 교재 개발 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 16.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[입찰] 2025년 국내 한국어교원 배움이음터 개최 운영</strong>
+                  <p>조달물자(용역) 구매입찰 공고 (제한총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00790655-000 ㆍ공 고 명: 2025년 국내 한국어교원 배움이음터 개최 운영 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 14.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[입찰] 2025년 한국어-외국어 병렬 말뭉치 구축 사업 감리</strong>
+                  <p>조달물자(용역) 구매입찰 (긴급)공고 (제한총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00781824-000 ㆍ공 고 명: 2025년 한국어-외국어 병렬 말뭉치 구축 사업 감리 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 14.</span>
+                  <span class="card_type">입찰 공고</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[입찰] 2025년 묵자-점자 병렬 말뭉치 구축 사업 감리</strong>
+                  <p>용 역 입 찰 공 고 (제한총액/협상계약/국내입찰) ㆍ입찰공고번호: R25BK00783566-000 ㆍ공고명: 2025년 묵자-점자병렬말뭉치 구축 사업 감리 ㆍ수 요 기 관: 문화체육관광부 국립국어원</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 보도 자료 -->
+        <div class="swiper announce_cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 17.</span>
+                  <span class="card_type">보도 자료</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">‘점사랑’으로 대용량 문서 점역도 빠르게</strong>
+                  <p>‘점사랑’으로 대용량 문서 점역도 빠르게 국립국어원, 대용량 문서 처리 성능이 향상된 ‘점사랑 6.0’ 공개국립국어원은 점자 문서 제작의 편의성을 높이기 위해 점역 소프트웨어 ‘점사랑 6.0’을 개발하여 오는 18일 공개한다. ‘점사랑 6.0’은 묵자* 문서를 점자로 변환하거나 점자 문서를 묵자로 변환하는 점역·역점역 프로그램으로, 파일 관리, 문서 편집, 파일 인쇄 등의 기능을 제공하여 사용자가 점자 문서를 편리하게 만들 수 있다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 16.</span>
+                  <span class="card_type">보도 자료</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">점자는 시각장애인 자립에 큰 영향 미쳐</strong>
+                  <p>점자는 시각장애인 자립에 큰 영향 미쳐 - 국립국어원, 2024년 점자 사용 양상 실태 조사 결과 발표 - 국립국어원이 ‘2024년 점자 사용 양상 실태 조사’ 결과를 발표하였다. 이번 조사는 전국의 만 20세 이상 69세 이하 점자 사용 시각장애인 508명을 대상으로, 점자 사용 목적, 점자 학습 능력, 점자 도서 및 점자 보조기기의 활용, 점자 사용 환경에 관한 설문을 진행한 것이다. 조사 결과 점자가 시각장애인의 자립에 미치는 영향은 상당히 큰 것으로 나타났다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 3. 6.</span>
+                  <span class="card_type">보도 자료</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">국립국어원, 변화와 변혁의 인공지능 개발 현장에서 한국어 자원 구축의 최적화 방안을 찾다</strong>
+                  <p>국립국어원, 변화와 변혁의 인공지능 개발 현장에서 한국어 자원 구축의 최적화 방안을 찾다 - 3. 7.(금), 한국어 자원 구축 방향 설정을 위한 산업계‧학계 자문회의 개최 - 빠르게 발전하는 인공지능 기술에 대응한 한국어 자원 구축 정책 논의 </p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 2. 17.</span>
+                  <span class="card_type">보도 자료</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">문화체육관광부 실·국장급 인사발령</strong>
+                  <p>문화체육관광부 실·국장급 인사발령 실·국장급 인사발령 소속(직위) 직급 성명 발령일자 국립국어원 어문연구실장 학예연구관 강미영 2025.2.17. 담당 부서 국립국어원 기획운영과 책임자 과장 김재춘 (02-2669-9770) 담당자 행정사무관 이성운 (02-2669-9772)</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 2. 14.</span>
+                  <span class="card_type">보도 자료</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">국립국어원, 올해 첫 번째 한국어교원 개인 자격 심사 접수</strong>
+                  <p>국립국어원, 올해 첫 번째 한국어교원 개인 자격 심사 접수 - 매년 3회 한국어교원 개인 자격 부여 신청 접수 - 올해 안에 자격증 온라인 발급 기능 개발 국립국어원은 2025년 한국어교원 자격 심사 일정을 확정하고, 3월 6일(목)부터 3월 14일(금)까지 9일간 올해 첫 한국어교원 개인 자격 심사 신청을 받는다. 한국어교원 자격 심사 신청은 국립국어원 한국어교원 누리집(https://kteacher.korean.go.kr)에서 온라인으로 접수한다.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- 학회/행사/기타 -->
+        <div class="swiper announce_cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 4. 2.</span>
+                  <span class="card_type">학회/행사/기타</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[기타] 국어생활연구원 교육과정 관리자 채용(완료)</strong>
+                  <p>국어생활연구원 교육과정 관리자 채용(완료) 사단법인 국어생활연구원에서는 국민의 국어 능력 향상을 위한 교육과 관련한 업무를 담당할 분을 다음과 같이 채용하고자 합니다. 새로운 모습의 교육과정을 펼쳐 국어 문화의 수준을 드높이는 데 힘을 보태실 분은 지원해 주시기 바랍니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 1. 16.</span>
+                  <span class="card_type">학회/행사/기타</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[행사] 2025 한국수어-한국어 사전 개통 행사</strong>
+                  <p>행사 설명 (수어 안내) 바로 가기</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2025. 1. 3.</span>
+                  <span class="card_type">학회/행사/기타</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[기타] 국어생활연구원 교육과정 관리자 채용 공고</strong>
+                  <p>국어생활연구원 교육과정 관리자 채용 공고 사단법인 국어생활연구원이 국민의 국어 능력 향상을 위한 교육과 관련한 업무를 담당할 분을 다음과 같이 채용하고자 합니다. 새로운 모습의 교육과정을 펼쳐 국어 문화의 수준을 드높이는 데 힘을 보태실 분은 지원해 주시기 바랍니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2024. 12. 26.</span>
+                  <span class="card_type">학회/행사/기타</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[기타] 고려대학교 제22기 사전편찬교실 안내</strong>
+                  <p>고려대학교 제22기 사전편찬교실 안내 고려대학교 민족문화연구원 사전학센터에서 제22기 사전편찬교실을 개최합니다. 이번 사전편찬교실은 인문학 분야의 어휘 지식을 디지털 자원화하고, 이를 다양한 웹 플랫폼에서 편집할 수 있는 실질적인 능력을 함양하는 것을 목표로 합니다. 모든 과정은 비대면 ZOOM 강의로 진행되어 시간과 장소의 제약 없이 참여할 수 있습니다. 사전 편찬에 관심 있는 분들의 많은 참여를 바랍니다.</p>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" class="card">
+                <div class="card_info">
+                  <span class="card_date">2024. 11. 19.</span>
+                  <span class="card_type">학회/행사/기타</span>
+                </div>
+                <div class="card_content">
+                  <strong class="card_title">[학회] 국립국어원 '모두의 말뭉치' 국제 학술 대회(12/4) 현장 참가 사전 접수 안내</strong>
+                  <p>국립국어원 '모두의 말뭉치' 국제 학술 대회(12/4) 현장 참가 사전 접수 안내 안녕하십니까? 2024년 12월 4일(수)에 '인공 지능과 언어 자원의 세계적 동향'이라는 주제로 국제 학술 대회를 개최합니다. 이번 국제 학술 대회는 인공 지능 및 기계 번역 분야에서 널리 인정받고 있는 필리프 쾬(Philipp Koehn, 존스홉킨스대) 교수를 비롯한 각계 전문가의 다양한 기조연설과 발표, 패널 토의로 구성하였습니다.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 국립국어원 누리 소통망 바로가기 sns -->
+  <section class="sns" id="section5">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">국립국어원과 소통해요</p>
+        <h2 class="section_title">국립국어원 누리 소통망 바로가기</h2>
+      </div>
+      <div class="snsBox">
+        <div class="swiper sns_cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#" target="_blank" class="card">
+                <div class="card_img">
+                  <img src="images/sns_post (1).jpg" alt="sns-img">
+                </div>
+                <div class="card_content">
+                  <span class="sns_icon">
+                    <img src="images/icon_sns (naver_blog).png" alt=""> 
+                  </span>
+                  <strong class="card_title">너랑이가 알려 주는 말 다리미, ‘싱크홀’을 우리말로 다듬어요!</strong>
+                </div>
+                <div class="card_info">
+                  <span class="card_date">2025.04.21.</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" target="_blank" class="card">
+                <div class="card_img">
+                  <img src="images/sns_post (2).jpg" alt="sns-img">
+                </div>
+                <div class="card_content">
+                  <span class="sns_icon">
+                    <img src="images/icon_sns (naver_blog).png" alt=""> 
+                  </span>
+                  <strong class="card_title">2025년 제3기 국립국어원 우리말글 기자단 모집</strong>
+                </div>
+                <div class="card_info">
+                  <span class="card_date">2025.04.15.</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" target="_blank" class="card">
+                <div class="card_img">
+                  <img src="images/sns_post (3).jpg" alt="sns-img">
+                </div>
+                <div class="card_content">
+                  <span class="sns_icon">
+                    <img src="images/icon_sns (naver_blog).png" alt=""> 
+                  </span>
+                  <strong class="card_title">너랑이가 알려 주는, ‘혈당 스파이크’를 우리말로 다듬어요!</strong>
+                </div>
+                <div class="card_info">
+                  <span class="card_date">2025.04.15.</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" target="_blank" class="card">
+                <div class="card_img">
+                  <img src="images/sns_post (4).PNG" alt="sns-img">
+                </div>
+                <div class="card_content">
+                  <span class="sns_icon ytb">
+                    <img src="images/icon_sns (youtube).png" alt=""> 
+                  </span>
+                  <strong class="card_title">한국수어누리사전 홍보 영상</strong>
+                </div>
+                <div class="card_info">
+                  <span class="card_date">2025.04.11.</span>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#" target="_blank" class="card">
+                <div class="card_img">
+                  <img src="images/sns_post (5).jpg" alt="sns-img">
+                </div>
+                <div class="card_content">
+                  <span class="sns_icon">
+                    <img src="images/icon_sns (naver_blog).png" alt=""> 
+                  </span>
+                  <strong class="card_title">[KBS 한국어] 무심코 사용하는 차별적 언어</strong>
+                </div>
+                <div class="card_info">
+                  <span class="card_date">2025.04.03.</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="sns_link">
+          <ul>
+            <li><a href="#" target="_blank">
+              <span class="sns_icon">
+                <img src="images/icon_sns (youtube).png" alt="sns-icon">
+              </span>
+              <span class="sns_title">유튜브 바로가기</span>
+            </a></li>
+            <li><a href="#" target="_blank">
+              <span class="sns_icon">
+                <img src="images/icon_sns (instagram).png" alt="sns-icon">
+              </span>
+              <span class="sns_title">인스타그램 바로가기</span>
+            </a></li>
+            <li><a href="#" target="_blank">
+              <span class="sns_icon">
+                <img src="images/icon_sns (naver_blog).png" alt="sns-icon">
+              </span>
+              <span class="sns_title">네이버 블로그 바로가기</span>
+            </a></li>
+            <li><a href="#" target="_blank">
+              <span class="sns_icon">
+                <img src="images/icon_sns (x).png" alt="sns-icon">
+              </span>
+              <span class="sns_title">엑스 (트위터) 바로가기 </span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 질문 있어요 ask -->
+  <section class="ask" id="section6">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">국어 상담을 진행할 수 있어요</p>
+        <h2 class="section_title">질문 있어요</h2>
+      </div>
+      <div class="ask_cards">
+        <ul>
+          <li data-aos="fade-up" data-aos-duration="1000"><a href="#" class="card">
+            <span class="card_icon">
+              <img src="images/icon_ganadaOnline.png" alt="ask-icon">
+            </span>
+            <div class="card_text">
+              <span class="card_desc">어법 · 표준국어대사전 …<br>내용 문의</span>
+              <strong class="card_name">온라인 가나다</strong>
+            </div>
+          </a></li>
+          <li data-aos="fade-up" data-aos-duration="1500"><a href="#" class="card">
+            <span class="card_icon">
+              <img src="images/icon_ganadaCall.png" alt="ask-icon">
+            </span>
+            <div class="card_text">
+              <span class="card_desc">전화상담 (1599-9979)<br>10시 ~ 12시 ·<br>13시 ~ 17시</span>
+              <strong class="card_name">가나다 전화</strong>
+            </div>
+          </a></li>
+          <li data-aos="fade-up" data-aos-duration="2000"><a href="#" class="card">
+            <span class="card_icon">
+              <img src="images/icon_ganadaTalk.png" alt="ask-icon">
+            </span>
+            <div class="card_text">
+              <span class="card_desc">카카오톡 상담</span>
+              <strong class="card_name">우리말 365</strong>
+            </div>
+          </a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 팝업 organization -->
+  <div class="organization" id="organization">
+    <div class="inner">
+      <ul>
+        <li><a href="#" target="_blank">문화체육관광부</a></li>
+        <li><a href="#" target="_blank">한국예술종합학교</a></li>
+        <li><a href="#" target="_blank">국립국악고등학교</a></li>
+        <li><a href="#" target="_blank">국립국악중학교</a></li>
+        <li><a href="#" target="_blank">국립전통예술고등학교</a></li>
+        <li><a href="#" target="_blank">국립전통예술중학교</a></li>
+        <li><a href="#" target="_blank">국립중앙박물관</a></li>
+        <li><a href="#" target="_blank">국립중앙도서관</a></li>
+        <li><a href="#" target="_blank">국립장애인도서관</a></li>
+        <li><a href="#" target="_blank">해외문화홍보원</a></li>
+        <li><a href="#" target="_blank">국립국악원</a></li>
+        <li><a href="#" target="_blank">국립민속박물관</a></li>
+        <li><a href="#" target="_blank">대한민국역사박물관</a></li>
+        <li><a href="#" target="_blank">국립한글박물관</a></li>
+        <li><a href="#" target="_blank">국립중앙극장</a></li>
+        <li><a href="#" target="_blank">국립현대미술관</a></li>
+        <li><a href="#" target="_blank">한국정책방송원</a></li>
+        <li><a href="#" target="_blank">국립아시아문화전당</a></li>
+        <li><a href="#" target="_blank">대한민국예술원</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_organization">
+      <ul>
+        <li><a href="#none" data-target="organization">문체부와 소속기관</a></li>
+        <li><a href="#">오시는 길</a></li>
+      </ul>
+    </div>
+    <div class="inner">
+      <div class="footer_about">
+        <div class="footer_info">
+          <div class="info_top">
+            <div class="info_logo">
+              <img src="images/main_logo.png" alt="footer-logo">
+            </div>
+            <div class="info_address_policy">
+              <address><strong>대표 전화</strong> 02-2669-9775 (평일 9 ~ 12시 / 13 ~ 18시)<br>우) 07511 서울특별시 강서구 금낭화로 154 (방화동 827)</address>
+              <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">정보공개</a></li>
+                <li><a href="#">저작권정책</a></li>
+                <li><a href="#">무료배포 프로그램</a></li>
+              </ul>
+            </div>
+          </div>
+          <p>COPYRIGHT ⓒ National Institute of Korean Language ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="swiper footer_banners">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="images/banner (1).jpg" alt="banner-img"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/banner (2).jpg" alt="banner-img"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/banner (3).png" alt="banner-img"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/banner (4).png" alt="banner-img"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/banner (5).png" alt="banner-img"></a></div>
+            <div class="swiper-slide"><a href="#"><img src="images/banner (6).jpg" alt="banner-img"></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 위로(가기) top_btn -->
+  <div class="top_btn">
+    <a href="#">▲<br>위로!</a>
+  </div>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- custom -->
+  <script src="js/custom.js"></script>
+</body>
+</html>

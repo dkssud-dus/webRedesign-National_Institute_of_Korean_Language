@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>National Institute of Korean Language</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="images/icon.png">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index_foreign.css">
+
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+      <div class="nav_logo">
+        <a href="#">
+          <img src="images/main_logo_en.png" alt="logo">
+        </a>
+      </div>
+      <nav class="topNav">
+        <span>
+          <a href="#none">
+            <i class="fa-solid fa-globe" data-target="language"></i>
+          </a>
+        </span>
+        <ul>
+          <li><a href="#" data-target="introduction">Introduction</a></li>
+          <li><a href="#" data-target="activity">Activities</a></li>
+          <li><a href="#" data-target="aboutHangeul">Hangeul</a></li>
+          <li><a href="#" data-target="korean">Romanization</a></li>
+          <li><a href="#" data-target="download">Downloads</a></li>
+        </ul>
+        <span class="accordion_toggle">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <span>
+          <a href="#"><i class="fa-solid fa-square"></i></a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 언어 변경 language -->
+  <div class="language" id="language">
+    <ul>
+      <li><a href="index.html">Korean</a></li>
+      <li><a href="index_ja.html">Japanese</a></li>
+    </ul>
+  </div>
+
+  <!-- 서브 내비게이션 subNav -->
+  <div class="subNav_wrap">
+    <div class="inner">
+      <!-- Introduction -->
+      <div class="subNav_content" id="introduction">
+        <ul>
+          <li>
+            <b><a href="#">Objective</a></b>
+          </li>
+          <li>
+            <b><a href="#">Mission</a></b>
+          </li>
+          <li>
+            <b><a href="#">History</a></b>
+          </li>
+          <li>
+            <b><a href="#">History of Director Generals</a></b>
+          </li>
+          <li>
+            <b><a href="#">Publicity Video</a></b>
+          </li>
+          <li>
+            <b><a href="#">Organization</a></b>
+          </li>
+          <li>
+            <b><a href="#">Location</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- Activities -->
+      <div class="subNav_content" id="activity">
+        <ul>
+          <li>
+            <b><a href="#">Language Policy R&D</a></b>
+          </li>
+          <li>
+            <b><a href="#">Language Resources & Services</a></b>
+          </li>
+          <li>
+            <b><a href="#">Communication Environment</a></b>
+          </li>
+          <li>
+            <b><a href="#">Comprehensive Dictionaries</a></b>
+          </li>
+          <li>
+            <b><a href="#">Korean Education System</a></b>
+          </li>
+          <li>
+            <b><a href="#">Accessibility: Sign & Braille</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- Hangeul -->
+      <div class="subNav_content" id="aboutHangeul">
+        <ul>
+          <li>
+            <b><a href="#">Want to Know about Hangeul?</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- Romanization -->
+      <div class="subNav_content" id="korean">
+        <ul>
+          <li>
+            <b><a href="#">Romanization of Korean</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- Downloads -->
+      <div class="subNav_content" id="download">
+        <ul>
+          <li>
+            <b><a href="#">Report</a></b>
+          </li>
+          <li>
+            <b><a href="#">Other Public Sources</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 반응형 내비게이션 accordionNav -->
+  <div class="accordionNav_wrap">
+    <!-- Introduction -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>Introduction</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">Objective</a></b>
+          </li>
+          <li>
+            <b><a href="#">Mission</a></b>
+          </li>
+          <li>
+            <b><a href="#">History</a></b>
+          </li>
+          <li>
+            <b><a href="#">History of Director Generals</a></b>
+          </li>
+          <li>
+            <b><a href="#">Publicity Video</a></b>
+          </li>
+          <li>
+            <b><a href="#">Organization</a></b>
+          </li>
+          <li>
+            <b><a href="#">Location</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Activities -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>Activities</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">Language Policy R&D</a></b>
+          </li>
+          <li>
+            <b><a href="#">Language Resources & Services</a></b>
+          </li>
+          <li>
+            <b><a href="#">Communication Environment</a></b>
+          </li>
+          <li>
+            <b><a href="#">Comprehensive Dictionaries</a></b>
+          </li>
+          <li>
+            <b><a href="#">Korean Education System</a></b>
+          </li>
+          <li>
+            <b><a href="#">Accessibility: Sign & Braille</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Hangeul -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>Hangeul</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">Want to Know about Hangeul?</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Romanization -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>Romanization</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">Romanization of Korean</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Downloads -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>Downloads</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">Report</a></b>
+          </li>
+          <li>
+            <b><a href="#">Other Public Sources</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 앵커 section_anchor -->
+  <div class="section_anchor">
+    <ul>
+      <li><a href="#section1">
+        <strong>ㄱ</strong>
+        <span>… Objective</span>
+      </a></li>
+      <li><a href="#section2">
+        <strong>ㄴ</strong>
+        <span>… Korean Dictionary</span>
+      </a></li>
+      <li><a href="#section3">
+        <strong>ㄷ</strong>
+        <span>… Pracical Korean Expressions</span>
+      </a></li>
+      <li><a href="#section4">
+        <strong>ㄹ</strong>
+        <span>… Korea.net</span>
+      </a></li>
+    </ul>
+  </div>
+
+  <!-- sns sns_link -->
+  <div class="sns_link">
+    <ul>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (youtube).png" alt="sns-icon">
+      </a></li>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (instagram).png" alt="sns-icon">
+      </a></li>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (naver_blog).png" alt="sns-icon">
+      </a></li>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (x).png" alt="sns-icon">
+      </a></li>
+    </ul>
+  </div>
+
+  <!-- 스크롤 알림 아이콘 scroll_icon -->
+  <a href="#none" class="scroll_icon">
+    <div class="scroll_box">
+      <span class="scroll_dot"></span>
+    </div>
+    <span>SCROLL</span>
+  </a>
+
+  <!-- 메인비주얼 main_visual -->
+  <section class="main_visual">
+    <!-- 비디오 영역 -->
+    <div class="main_bg">
+      <video src="images/main_visual (video).mp4" autoplay muted loop></video>
+    </div>
+    <div class="inner">
+      <!-- 메인 텍스트 영역 -->
+      <div class="main_box">
+        <div class="main_txt" data-aos="fade-up" data-aos-duration="1000">
+          <strong>People make words <br> and the words make the people.</strong>
+          <span>National Institute of Korean Language is supporting the correct use.</span>
+        </div>
+      </div>
+      <!-- 목적 영역 -->
+      <div class="mainAbout_box" id="section1">
+        <div class="main_txt">
+          <strong>People make words <br> and the words make the people.</strong>
+          <span>National Institute of Korean Language is supporting the correct use.</span>
+        </div>
+        <div class="mainAbout_txt">
+          <p data-aos="fade-up" data-aos-duration="1500">
+            The National Institute of Korean Language was established for the purpose of developing the Korean Language, enhancing the public's language competency, and administering research activities.
+          </p>
+          <p data-aos="fade-up" data-aos-duration="2000">The Institute conducts research on language policies, manages linguistic rules and standards, publishes Korean Language dictionaries to enhance the public's language use, improves the environment for effective Korean Language communication, strives to enhance Korean Language education quality, and promotes the environment for Korean Sign Language and Korean Braille use.</p>
+
+        </div>
+        <a href="#">m o r e</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 韓国語辞典 dictionary -->
+  <section class="dictionary" id="section2">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">Korean-Foreign Language Learners’ Dictionary</p>
+        <h2 class="section_title">Korean Dictionary</h2>
+      </div>
+      <div class="swiper dictionary_list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>English</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Arabic</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Chinese</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>French</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Indonesian</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Japanese</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Mongolian</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Russian</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Spanish</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Thai</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>Vietnamese</span>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 韓国語実用表現　expression -->
+  <section class="expression" id="section3">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">Pracical Korean Expressions for Learners of Korean</p>
+        <h2 class="section_title">Pracical Korean Expressions</h2>
+      </div>
+      <div class="expression_box">
+        <ul>
+          <li><a href="#">
+            <span>Practical Korean Expressions
+              for Foreigners</span>
+            <strong>English<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>外國人實用韓語指南</span>
+            <strong>Chinese<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>Un mot coréen
+              pour les étrangers</span>
+            <strong>French<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>外国人ための韓国語一言</span>
+            <strong>Japanese<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>Разговорник корейского
+              языка для иностранцев</span>
+            <strong>Russian<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>Expresiones báicas en coreano
+              para los extranjeros</span>
+            <strong>Spanish<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Korea_net -->
+  <section class="korea_net" id="section4">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">Korean news at your fingertips</p>
+        <h2 class="section_title">Korea.net</h2>
+      </div>
+      <div class="swiper news_cards">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (1).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">Buddhist embroidery exhibition in Seoul</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (2).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">System to predict domestic, E. Asian climate for up to 10 years</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (3).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">Study finds magnets usable in quantum computing operations</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (4).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">Netflix releases official trailer for final season of 'Squid Game'</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (5).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">Mission to promote digital gov't cooperation in 2 African states</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 팝업 organization -->
+  <div class="organization" id="organization">
+    <div class="inner">
+      <ul>
+        <li><a href="#" target="_blank">King Sejong Institutes</a></li>
+        <li><a href="#" target="_blank">National Hangeul Museum</a></li>
+        <li><a href="#" target="_blank">Ministry of Culture, Sports and Tourism</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 푸터 글자 애니메이션 footer_animation -->
+  <div class="footer_animation">
+    <ul>
+      <li>안녕하세요</li>
+      <li>반가워</li>
+      <li>고마워요</li>
+      <li>사랑해</li>
+      <li>좋아</li>
+    </ul>
+  </div>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_organization">
+      <ul>
+        <li><a href="#none" data-target="organization">Related Sites</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+    </div>
+    <div class="inner">
+      <div class="info_logo">
+        <img src="images/main_logo_en.png" alt="footer-logo">
+      </div>
+      <div class="info_address">
+        <address><strong>Tel</strong>+82-2-2669-9775 (Weekdays: 09:00–12:00 / 13:00–18:00 (KST))<br>154, Geumnanghwaro (827 Banghwa-dong), Gangseo-gu, Seoul 07511, Republic of Korea</address>
+        <p>COPYRIGHT ⓒ National Institute of Korean Language ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 위로(가기) top_btn -->
+  <div class="top_btn">
+    <a href="#">▲<br>TOP</a>
+  </div>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- custom -->
+  <script src="js/index_foreign.js"></script>
+</body>
+</html>

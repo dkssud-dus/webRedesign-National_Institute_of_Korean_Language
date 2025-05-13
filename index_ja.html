@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>国立国語院</title>
+
+  <!-- favicon -->
+  <link rel="icon" href="images/icon.png">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- style -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index_foreign.css">
+
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+      <div class="nav_logo">
+        <a href="#">
+          <img src="images/main_logo_ja.png" alt="logo">
+        </a>
+      </div>
+      <nav class="topNav">
+        <span>
+          <a href="#none">
+            <i class="fa-solid fa-globe" data-target="language"></i>
+          </a>
+        </span>
+        <ul>
+          <li><a href="#" data-target="introduction">紹介</a></li>
+          <li><a href="#" data-target="activity">活動</a></li>
+          <li><a href="#" data-target="aboutHangeul">ハングルについて</a></li>
+          <li><a href="#" data-target="korean">表記</a></li>
+          <li><a href="#" data-target="download">ダウンロード</a></li>
+        </ul>
+        <span class="accordion_toggle">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <span>
+          <a href="#"><i class="fa-solid fa-square"></i></a>
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 언어 변경 language -->
+  <div class="language" id="language">
+    <ul>
+      <li><a href="index.html">韓国語</a></li>
+      <li><a href="index_en.html">英語</a></li>
+    </ul>
+  </div>
+
+  <!-- 서브 내비게이션 subNav -->
+  <div class="subNav_wrap">
+    <div class="inner">
+      <!-- 紹介 -->
+      <div class="subNav_content" id="introduction">
+        <ul>
+          <li>
+            <b><a href="#">設立目的</a></b>
+          </li>
+          <li>
+            <b><a href="#">目標</a></b>
+          </li>
+          <li>
+            <b><a href="#">沿革</a></b>
+          </li>
+          <li>
+            <b><a href="#">歴代院長</a></b>
+          </li>
+          <li>
+            <b><a href="#">動画</a></b>
+          </li>
+          <li>
+            <b><a href="#">組織</a></b>
+          </li>
+          <li>
+            <b><a href="#">位置</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- 活動 -->
+      <div class="subNav_content" id="activity">
+        <ul>
+          <li>
+            <b><a href="#">研究・発展</a></b>
+          </li>
+          <li>
+            <b><a href="#">情報開発</a></b>
+          </li>
+          <li>
+            <b><a href="#">環境改善</a></b>
+          </li>
+          <li>
+            <b><a href="#">辞典編纂・運営</a></b>
+          </li>
+          <li>
+            <b><a href="#">教育</a></b>
+          </li>
+          <li>
+            <b><a href="#">手話・点字</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- ハングルについて -->
+      <div class="subNav_content" id="aboutHangeul">
+        <ul>
+          <li>
+            <b><a href="#">ハングルが知りたい</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- 表記 -->
+      <div class="subNav_content" id="korean">
+        <ul>
+          <li>
+            <b><a href="#">韓国語表記法</a></b>
+          </li>
+        </ul>
+      </div>
+      <!-- ダウンロード -->
+      <div class="subNav_content" id="download">
+        <ul>
+          <li>
+            <b><a href="#">レポート</a></b>
+          </li>
+          <li>
+            <b><a href="#">公開資料</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 반응형 내비게이션 accordionNav -->
+  <div class="accordionNav_wrap">
+    <!-- 紹介 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>紹介</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">設立目的</a></b>
+          </li>
+          <li>
+            <b><a href="#">目標</a></b>
+          </li>
+          <li>
+            <b><a href="#">沿革</a></b>
+          </li>
+          <li>
+            <b><a href="#">歴代院長</a></b>
+          </li>
+          <li>
+            <b><a href="#">動画</a></b>
+          </li>
+          <li>
+            <b><a href="#">組織</a></b>
+          </li>
+          <li>
+            <b><a href="#">位置</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 活動 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>活動</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">研究・発展</a></b>
+          </li>
+          <li>
+            <b><a href="#">情報開発</a></b>
+          </li>
+          <li>
+            <b><a href="#">環境改善</a></b>
+          </li>
+          <li>
+            <b><a href="#">辞典編纂・運営</a></b>
+          </li>
+          <li>
+            <b><a href="#">教育</a></b>
+          </li>
+          <li>
+            <b><a href="#">手話・点字</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ハングルについて -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>ハングルについて</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">ハングルが知りたい</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 表記 -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>表記</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">韓国語表記法</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ダウンロード -->
+    <div class="accordionNav_menu">
+      <div class="accordionNav_title">
+        <h2>ダウンロード</h2>
+      </div>
+      <div class="accordionNav_content">
+        <ul>
+          <li>
+            <b><a href="#">レポート</a></b>
+          </li>
+          <li>
+            <b><a href="#">公開資料</a></b>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 섹션 앵커 section_anchor -->
+  <div class="section_anchor">
+    <ul>
+      <li><a href="#section1">
+        <strong>ㄱ</strong>
+        <span>… 設立目的</span>
+      </a></li>
+      <li><a href="#section2">
+        <strong>ㄴ</strong>
+        <span>… 韓国語辞典</span>
+      </a></li>
+      <li><a href="#section3">
+        <strong>ㄷ</strong>
+        <span>… 韓国語実用表現</span>
+      </a></li>
+      <li><a href="#section4">
+        <strong>ㄹ</strong>
+        <span>… Korea.net</span>
+      </a></li>
+    </ul>
+  </div>
+
+  <!-- sns sns_link -->
+  <div class="sns_link">
+    <ul>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (youtube).png" alt="sns-icon">
+      </a></li>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (instagram).png" alt="sns-icon">
+      </a></li>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (naver_blog).png" alt="sns-icon">
+      </a></li>
+      <li><a href="#" target="_blank">
+        <img src="images/icon_sns (x).png" alt="sns-icon">
+      </a></li>
+    </ul>
+  </div>
+
+  <!-- 스크롤 알림 아이콘 scroll_icon -->
+  <a href="#none" class="scroll_icon">
+    <div class="scroll_box">
+      <span class="scroll_dot"></span>
+    </div>
+    <span>SCROLL</span>
+  </a>
+
+  <!-- 메인비주얼 main_visual -->
+  <section class="main_visual">
+    <!-- 비디오 영역 -->
+    <div class="main_bg">
+      <video src="images/main_visual (video).mp4" autoplay muted loop></video>
+    </div>
+    <div class="inner">
+      <!-- 메인 텍스트 영역 -->
+      <div class="main_box">
+        <div class="main_txt" data-aos="fade-up" data-aos-duration="1000">
+          <strong>人は言葉を作り、言葉は人を作る。</strong>
+          <span>国立国語院、正しい韓国語の教科書。</span>
+        </div>
+      </div>
+      <!-- 목적 영역 -->
+      <div class="mainAbout_box" id="section1">
+        <div class="main_txt">
+          <strong>人は言葉を作り、言葉は人を作る。</strong>
+          <span>国立国語院、正しい韓国語の教科書。</span>
+        </div>
+        <div class="mainAbout_txt">
+          <p data-aos="fade-up" data-aos-duration="1500">
+            国立国語院は韓国語の発展・国民の言語スキル強化・研究活動遂行を目的に設立されました。
+          </p>
+          <p data-aos="fade-up" data-aos-duration="1500">国立国語院の現在事業は下記の通り、</p>
+          <p data-aos="fade-up" data-aos-duration="2000">言語政策に関する研究すること。</p>
+          <p data-aos="fade-up" data-aos-duration="2000">言語規則と標準を管理しながら、国民の言語使用改善を為に国語辞典を発刊すること。</p>
+          <p data-aos="fade-up" data-aos-duration="2000">効果的な国語相通の為に環境を改善すること。</p>
+          <p data-aos="fade-up" data-aos-duration="2000">韓国語教育のクオリティを上げること。</p>
+          <p data-aos="fade-up" data-aos-duration="2000">韓国語手話・点字環境造成すること。</p>
+        </div>
+        <a href="#">m o r e</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 韓国語辞典 dictionary -->
+  <section class="dictionary" id="section2">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">外国人韓国語学習辞典へページ移動</p>
+        <h2 class="section_title">韓国語辞典</h2>
+      </div>
+      <div class="swiper dictionary_list">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>日本語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>アラブ語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>インドネシア語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>スペイン語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>タイ語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>フランス語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>ベトナム語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>モンゴル語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>ロシア語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>英語</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="images/icon_service (1).png" alt="service-icon">
+              <span>中国語</span>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 韓国語実用表現　expression -->
+  <section class="expression" id="section3">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">外国人のための韓国語実用表現ダウンロード</p>
+        <h2 class="section_title">外国人のための韓国語一言</h2>
+      </div>
+      <div class="expression_box">
+        <ul>
+          <li><a href="#">
+            <span>外国人ための韓国語一言</span>
+            <strong>日本語<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>Expresiones báicas en coreano
+              para los extranjeros</span>
+            <strong>スペイン語<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>Un mot coréen
+              pour les étrangers</span>
+            <strong>フランス語<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>Разговорник корейского
+              языка для иностранцев</span>
+            <strong>ロシア語<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>Practical Korean Expressions
+              for Foreigners</span>
+            <strong>英語<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+          <li><a href="#">
+            <span>外國人實用韓語指南</span>
+            <strong>中国語<i class="fa-solid fa-download"></i></strong>
+          </a></button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Korea_net -->
+  <section class="korea_net" id="section4">
+    <div class="inner">
+      <div class="section_titleBox">
+        <p class="section_desc">目の前で見られる韓国ニュース</p>
+        <h2 class="section_title">Korea.net</h2>
+      </div>
+      <div class="swiper news_cards">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (1).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">「仏教刺繍工芸特別展」</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (2).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">10年後、東アジア·朝鮮半島の気候予測···韓国、国家気候予測システムの開発に着手</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (3).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">磁石で量子コンピュータを作る</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (4).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">Netflix、「イカゲーム」の最終シーズンの公式トレーラーを公開</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" target="_blank" class="card">
+              <div class="card_img">
+                <img src="images/news_post (5).jpg" alt="news-img">
+              </div>
+              <div class="card_content">
+                <strong class="card_title">韓国のデジタル政府、アフリカへ</strong>
+              </div>
+              <div class="card_info">
+                <span class="card_date">2025.05.07.</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 팝업 organization -->
+  <div class="organization ja" id="organization">
+    <div class="inner">
+      <ul>
+        <li><a href="#" target="_blank">オンライン世宗学堂</a></li>
+        <li><a href="#" target="_blank">国立ハングル博物館</a></li>
+        <li><a href="#" target="_blank">文化体育観光部</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 푸터 글자 애니메이션 footer_animation -->
+  <div class="footer_animation">
+    <ul>
+      <li>안녕하세요</li>
+      <li>반가워</li>
+      <li>고마워요</li>
+      <li>사랑해</li>
+      <li>좋아</li>
+    </ul>
+  </div>
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="footer_organization">
+      <ul>
+        <li><a href="#none" data-target="organization">関連機関</a></li>
+        <li><a href="#">国立国語院の位置</a></li>
+      </ul>
+    </div>
+    <div class="inner">
+      <div class="info_logo">
+        <img src="images/main_logo_ja.png" alt="footer-logo">
+      </div>
+      <div class="info_address">
+        <address><strong>電話</strong> +82-2-2669-9775 (平日 9 ~ 12時 / 13 ~ 18時)<br>〒07511 大韓民国 ソウル特別市 江西区 錦囊花路154 (空港洞827)</address>
+        <p>COPYRIGHT ⓒ National Institute of Korean Language ALL RIGHTS RESERVED.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 위로(가기) top_btn -->
+  <div class="top_btn">
+    <a href="#">▲<br>TOP</a>
+  </div>
+
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- custom -->
+  <script src="js/index_foreign.js"></script>
+</body>
+</html>

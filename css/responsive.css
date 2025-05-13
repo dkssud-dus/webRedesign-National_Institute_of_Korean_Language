@@ -1,0 +1,779 @@
+/* 이너 반응형 */
+
+@media screen and (max-width:1319px) and (min-width:768px){
+  *{
+    font-size: 15px;
+  }
+
+  /* 이너 */
+
+  .inner{
+    width: 80%;
+  }
+
+  /* 섹션 타이틀 section_titleBox */
+
+  /* 헤더 */
+
+  header{
+    width: 100vw;
+    top: 10px; left: 0; transform: translateX(0);
+  }
+  header .inner{
+  }
+
+  
+
+  /* 탑 내비게이션 */
+
+  .topNav{
+    width: 110px;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .topNav ul{
+    display: none;
+  }
+  .topNav span.accordion_toggle{
+    display: block;
+  }
+
+  /* 언어 변경 language */
+
+  .language{
+    width: 50%;
+    top: 75px; left: 40%;
+  }
+
+  /* 반응형 내비게이션 */
+
+  .accordionNav_content a i{
+    left: 3%;
+  }
+  .accordionNav_content > ul li > ul li a i{
+    left: 4%; 
+  }
+  
+  /* 빠른 이동 */
+
+  .quick_menu{
+    display: none;
+  }
+
+  /* 섹션 앵커 section_anchor */
+
+  .section_anchor{
+    display: none;
+  }
+
+  /* 메인비주얼 main_visual */
+
+  .main_box{
+    width: 80%;
+  }
+  .main_box .main_txt strong{
+    font-size: 2.3rem;
+  }
+  .main_box .main_search{
+    height: 40%;
+  }
+  .main_box .main_search input{
+    width: 95%;
+  }
+
+  .main_box .main_search button{
+    right: 30px;
+  }
+
+
+  /* 함께하는 우리말 다듬기 word_korean */
+
+  .word_korean::before{
+    left: 0;
+  }
+  
+  .word_korean::after{
+    left: 20%;
+  }
+  .korean_box_left{
+    width: 40%; 
+  }
+  .word_korean .page_more{
+    bottom: 0; right: 10%;
+  }
+
+  /* 스위치 */
+  .korean_box_right{
+    width: 60%;
+  }
+  .korean_box_right ul li input{
+    width: 99%;
+  }
+  .korean_box_right ul li input:checked:before{
+    box-shadow: 0 0 5px var(--gokGrey);
+    background-color: var(--gokWhite);
+    left: 80%;
+  }
+  .korean_box_right ul li input + span{
+    font-size: 1.1rem;
+    left: 50%; bottom: 170%; transform: translate(-50%, -50%);
+  }
+
+  /* 공공언어 개선 참여하기 word_improve */
+
+  .word_improve::before{
+    content: '';
+    width: 100%; height: 610px;
+  }
+  .improve_cards ul{
+    width: 100%;
+  }
+  .improve_cards ul li{
+    width: 48%;
+  }
+  .improve_cards ul li .card{
+    width: 100%; height: 250px;
+    padding: 2rem;
+    border-radius: 70px 70px 0 70px;
+  }
+  .improve_cards ul li .card .card_icon{
+    width: 70px; height: 70px;
+  }
+  .improve_cards ul li .card .card_text .card_desc{
+    font-size: .8rem;
+  }
+  .improve_cards ul li .card .card_text .card_name{
+    font-size: 1.5rem;
+  }
+
+  /* 국립국어원 알리미 announce */
+
+  .announce::before{
+    width: 95%; height: 520px;
+    top: 100px;
+    border-radius: 0 300px 50px 0;
+  }
+  .announce::after{
+    width: 95%; height: 520px;
+    top: 140px;
+    border-radius: 0 0 50px 300px;
+  }
+
+  /* 더보기 */
+
+  .announce .page_more{
+    top: 3px; left: 33%;
+  }
+
+  /* 탭 */
+
+  .announce_tabs .tab_btn::before{
+    top: 50%; right:-7px; transform: translateY(-50%);
+  }
+  .announce_tabs .tab_btn:hover{
+    font-size: 1.1rem;
+  }
+  .announce_tabs .tab_btn:hover::before{
+    width: 7px; height: 7px;
+  }
+  .announce_tabs .tab_btn.active{
+    font-size: 1.1rem;
+  }
+
+  /* 카드 */
+
+  .announce_cards{
+    width: 70%;
+  }
+  .announce_cards .card{
+    width: 90%;
+  }
+  .announce_cards .card .card_content .card_title{
+    height: 25%;
+  }
+
+  /* 스와이퍼 요소 */
+
+  .announce_cards .swiper-button-prev{
+    left: 60%;
+  }
+  .announce_cards .swiper-button-next{
+    right: 5%;
+  }
+  .announce_cards .swiper-pagination{
+    left: 69%;
+  }
+
+  /* 국립국어원 누리 소통망 바로가기 sns */
+
+  .sns::before{
+    width: 60%; height: 500px;
+    border-radius: 200px;
+  }
+  .sns::after{
+    content: '';
+    width: 300px; height: 300px;
+    right: 9%; bottom: -33%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--gokBlue-lightBGOp);
+  }
+
+  .sns_cards{
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+  }
+  .sns_cards .swiper-wrapper{
+    width: 100%;
+    padding: 0;
+  }
+  .sns_cards .swiper-wrapper .swiper-slide{
+    width: 100%;
+  }
+  .sns_cards .card{
+    width: 100%; height: 350px;
+  }
+  .sns_cards .card .card_img{
+    width: 100%; height: 70%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .sns_cards .card .card_img img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .sns_cards .card .card_content strong{
+    width: 80%; height: 80%;
+  }
+
+  .sns_cards .card .card_content .sns_icon{
+    width: 35px; height: 35px;
+  }
+
+  /* 스와이퍼 요소 */
+
+  .sns_cards .swiper-button-next,
+  .sns_cards .swiper-button-prev{
+    top: 50px;
+  }
+  .sns_cards .swiper-button-next{
+    right: 0;
+  }
+  .sns_cards .swiper-button-prev{
+    left: 67%;
+  }
+  .sns_cards .swiper-pagination{
+    top: 35px;
+    left:77%;
+  }
+
+  /* sns 아이콘 */
+
+  .sns_link ul{
+    width: 300px; height: 180px;
+    position: absolute;
+    right: 0; bottom: -130px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sns_link ul li{
+    width: 60px; height: 60px;
+    border-radius: 20px;
+  }
+  .sns_link ul li:nth-child(1){
+    top: 30px; right: 45%;
+  }
+  .sns_link ul li:nth-child(2){
+    top: 60px; right: 20%;
+  }
+  .sns_link ul li:nth-child(3){
+    top: 100px; right: 55%;
+  }
+  .sns_link ul li:nth-child(4){
+    top: 130px; right: 30%
+  }
+  .sns_link ul li .sns_icon{
+    width: 60px; height: 60px;
+  }
+  .sns_link ul li .sns_title{
+    display: none;
+  }
+  .sns_link ul li:hover{
+    width: 60px;
+  }
+
+  /* 질문 있어요 ask */
+  .ask_cards ul li{
+    width: 30%;
+  }
+  .ask_cards ul li .card{
+    width: 100%; height: 300px;
+  }
+  .ask_cards ul li .card .card_icon{
+    margin-bottom: 1rem;
+    width: 70px; height: 70px;
+    align-self: center;
+  }
+  
+  .ask_cards ul li .card .card_text{
+    align-self: center;
+  }
+
+  /* 푸터 팝업 organization */
+
+  .organization{
+    width: 100%;
+    bottom: 450px;
+  }
+  .organization .inner{
+    width: 100%; height: 400px;
+  }
+  .organization ul li{
+    width: 30%;
+  }
+
+
+  /* 푸터 */
+
+  footer{
+    width: 100%;
+  }
+  .footer_organization{
+    width: 100%;
+  }
+  .footer_organization ul{
+    width: 80%;
+  }
+  .footer_about{
+    
+  }
+  .footer_info .info_top{
+    width: 100%;
+  }
+  .footer_info .info_top .info_logo{
+    width: 30%;
+  }
+  .footer_info .info_top .info_logo img{
+    width: 100%;
+  }
+  .footer_info .info_top .info_address_policy address{
+    font-size: .7rem;
+  }
+  .footer_info .info_top .info_address_policy address strong{
+    font-size: .7rem;
+  }
+
+  .footer_info .info_top .info_address_policy ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer_info .info_top .info_address_policy ul li a{
+    font-size: .7rem;
+  }
+  .footer_info p{
+    font-size: .7rem;
+  }
+  .footer_banners{
+    width: 40%;
+    margin: 0;
+  }
+
+  /* 위로(가기) top_btn */
+
+  .top_btn{
+    right: 3%;
+  }
+}
+
+/* 모바일 반응형 */
+
+@media screen and (max-width:767px){
+  *{
+    font-size: 15px;
+  }
+
+  /* 이너 */
+
+  .inner{
+    width: 95%;
+  }
+
+  /* 섹션 타이틀 section_titleBox */
+
+  /* 헤더 */
+
+  header{
+    width: 100vw;
+    top: 10px; left: 0; transform: translateX(0);
+  }
+  header .inner{
+  }
+
+  
+
+  /* 탑 내비게이션 */
+
+  .topNav{
+    width: 110px;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  .topNav ul{
+    display: none;
+  }
+  .topNav span.accordion_toggle{
+    display: block;
+  }
+
+  /* 언어 변경 language */
+
+  .language{
+    width: 100%;
+    top: 75px; left: 0;
+  }
+  
+  /* 빠른 이동 */
+
+  .quick_menu{
+    display: none;
+  }
+
+  /* 섹션 앵커 section_anchor */
+
+  .section_anchor{
+    display: none;
+  }
+
+  /* 메인비주얼 main_visual */
+
+  .main_box{
+    width: 95%;
+  }
+  .main_box .main_txt strong{
+    font-size: 2.3rem;
+  }
+  .main_box .main_search{
+    height: 40%;
+  }
+  .main_box .main_search input{
+    width: 95%;
+  }
+
+  .main_box .main_search button{
+    right: 30px;
+  }
+
+
+  /* 함께하는 우리말 다듬기 word_korean */
+
+  .word_korean::before, .word_korean::after{
+    width: 0; height: 0;
+  }
+  .word_korean .inner{
+    display: flex;
+    flex-direction: column;
+  }
+  .korean_box_left{
+    width: 100%; 
+  }
+  .word_korean .page_more{
+    right: -5%;
+  }
+
+  /* 스위치 */
+
+  .korean_box_right ul li input{
+    width: 99%;
+  }
+  .korean_box_right ul li input:checked:before{
+    box-shadow: 0 0 5px var(--gokGrey);
+    background-color: var(--gokWhite);
+    left: 75%;
+  }
+  .korean_box_right ul li input + span{
+    font-size: 1.1rem;
+    left: 50%; bottom: 170%; transform: translate(-50%, -50%);
+  }
+
+  /* 공공언어 개선 참여하기 word_improve */
+
+  .word_improve::before{
+    content: '';
+    width: 100%; height: 610px;
+  }
+  .improve_cards ul{
+    width: 100%;
+  }
+  .improve_cards ul li{
+    width: 48%;
+  }
+  .improve_cards ul li .card{
+    width: 100%; height: 250px;
+    padding: 2rem;
+    border-radius: 70px 70px 0 70px;
+  }
+  .improve_cards ul li .card .card_icon{
+    width: 70px; height: 70px;
+  }
+  .improve_cards ul li .card .card_text .card_desc{
+    font-size: .8rem;
+  }
+  .improve_cards ul li .card .card_text .card_name{
+    font-size: 1.5rem;
+  }
+
+  /* 국립국어원 알리미 announce */
+
+  .announce::before{
+    width: 95%; height: 520px;
+    top: 100px;
+    border-radius: 0 300px 50px 0;
+  }
+  .announce::after{
+    width: 95%; height: 520px;
+    top: 140px;
+    border-radius: 0 0 50px 300px;
+  }
+
+  /* 더보기 */
+
+  .announce .page_more{
+    top: 3px; left: 33%;
+  }
+
+  /* 탭 */
+
+  .announce_tabs .tab_btn::before{
+    top: 50%; right:-7px; transform: translateY(-50%);
+  }
+  .announce_tabs .tab_btn:hover{
+    font-size: 1.1rem;
+  }
+  .announce_tabs .tab_btn:hover::before{
+    width: 7px; height: 7px;
+  }
+  .announce_tabs .tab_btn.active{
+    font-size: 1.1rem;
+  }
+
+  /* 카드 */
+
+  .announce_cards{
+    width: 70%;
+  }
+  .announce_cards .card{
+    width: 90%;
+  }
+  .announce_cards .card .card_content .card_title{
+    height: 25%;
+  }
+
+  /* 스와이퍼 요소 */
+
+  .announce_cards .swiper-button-prev{
+    left: 60%;
+  }
+  .announce_cards .swiper-button-next{
+    right: 5%;
+  }
+  .announce_cards .swiper-pagination{
+    left: 59%;
+  }
+
+  /* 국립국어원 누리 소통망 바로가기 sns */
+
+  .sns::before{
+    width: 90%; height: 500px;
+    border-radius: 150px;
+  }
+  .sns::after{
+    content: '';
+    width: 300px; height: 300px;
+    right: 0; bottom: -35%;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--gokBlue-lightBGOp);
+  }
+
+  .sns_cards{
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+  }
+  .sns_cards .swiper-wrapper{
+    width: 100%;
+    padding: 0;
+  }
+  .sns_cards .swiper-wrapper .swiper-slide{
+    width: 100%;
+  }
+  .sns_cards .card{
+    width: 100%; height: 350px;
+  }
+  .sns_cards .card .card_img{
+    width: 100%; height: 70%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  .sns_cards .card .card_img img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .sns_cards .card .card_content strong{
+    height: 80%;
+  }
+
+  .sns_cards .card .card_content .sns_icon{
+    width: 35px; height: 35px;
+  }
+
+  /* 스와이퍼 요소 */
+
+  .sns_cards .swiper-button-next,
+  .sns_cards .swiper-button-prev{
+    top: 50px;
+  }
+  .sns_cards .swiper-button-next{
+    right: 0;
+  }
+  .sns_cards .swiper-button-prev{
+    left: 50%;
+  }
+  .sns_cards .swiper-pagination{
+    top: 35px;
+    left:63%;
+  }
+
+  /* sns 아이콘 */
+
+  .sns_link ul{
+    width: 300px; height: 180px;
+    position: absolute;
+    right: 0; bottom: -130px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sns_link ul li{
+    width: 60px; height: 60px;
+    border-radius: 20px;
+  }
+  .sns_link ul li:nth-child(1){
+    top: 30px; right: 45%;
+  }
+  .sns_link ul li:nth-child(2){
+    top: 60px; right: 20%;
+  }
+  .sns_link ul li:nth-child(3){
+    top: 100px; right: 55%;
+  }
+  .sns_link ul li:nth-child(4){
+    top: 130px; right: 30%
+  }
+  .sns_link ul li .sns_icon{
+    width: 60px; height: 60px;
+  }
+  .sns_link ul li .sns_title{
+    display: none;
+  }
+  .sns_link ul li:hover{
+    width: 60px;
+  }
+
+  /* 질문 있어요 ask */
+  .ask_cards ul{
+    flex-direction: column;
+  }
+  .ask_cards ul li{
+    margin-bottom: 20px;
+  }
+  .ask_cards ul li .card{
+    width: 100%; height: 150px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .ask_cards ul li .card .card_icon{
+    width: 70px; height: 70px;
+    align-self: center;
+  }
+  
+  .ask_cards ul li .card .card_text{
+    align-self: center;
+  }
+
+  /* 푸터 팝업 organization */
+
+  .organization{
+    width: 100%;
+    bottom: 540px;
+  }
+  .organization .inner{
+    width: 100%; height: 400px;
+  }
+  .organization ul li{
+    width: 30%;
+  }
+
+
+  /* 푸터 */
+
+  footer{
+    width: 100%;
+  }
+  .footer_organization{
+    width: 100%;
+  }
+  .footer_organization ul{
+    width: 95%;
+  }
+  .footer_about{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_info .info_top{
+    width: 100%;
+  }
+  .footer_info .info_top .info_logo{
+    width: 30%;
+  }
+  .footer_info .info_top .info_logo img{
+    width: 100%;
+  }
+  .footer_info .info_top .info_address_policy address{
+    font-size: .7rem;
+  }
+  .footer_info .info_top .info_address_policy address strong{
+    font-size: .7rem;
+  }
+
+  .footer_info .info_top .info_address_policy ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer_info .info_top .info_address_policy ul li a{
+    font-size: .7rem;
+  }
+  .footer_info p{
+    font-size: .7rem;
+  }
+  .footer_banners{
+    width: 100%;
+    margin: auto;
+  }
+
+  /* 위로(가기) top_btn */
+
+  .top_btn{
+    right: 3%;
+  }
+}
