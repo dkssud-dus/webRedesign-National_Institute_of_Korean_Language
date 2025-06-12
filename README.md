@@ -88,7 +88,7 @@ National Institute of Korean Language
 
 ## 2. 파일 구성
 ```
-🇰🇷 WebRedesign-StudioGhibli   
+🇰🇷 WebRedesign-National_Institute_of_Korean_Language   
  ┣ 📂 images   
  ┣ 📂 pages      
  ┣ 📂 css    
